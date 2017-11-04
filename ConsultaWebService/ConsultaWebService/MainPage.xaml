@@ -3,9 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ConsultaWebService"
              x:Class="ConsultaWebService.MainPage">
+    
+    <StackLayout>
+    <Button x:Name="btncarregar" Text="Buscar endereco" VerticalOptions="Start" Clicked="btncarregar_Clicked"/>
+        <Entry x:Name="txtcep1" VerticalOptions="Start" Placeholder="CEP" Keyboard="Numeric"/>
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
 
+        <Label  x:Name="lblCEP" Text="cep" FontSize="20" TextColor="Black" VerticalTextAlignment="Center" Margin="20,0"/>
+        <Label x:Name="lblLog" Text="logradouro" FontSize="20" TextColor="Black" VerticalTextAlignment="Center" Margin="20,0"/>
+        <Label x:Name="lblbairro" Text="Bairro" FontSize="20" TextColor="Black" VerticalTextAlignment="Center" Margin="20,0"/>
+        <Label x:Name="lbllocalidade" Text="Localidade" FontSize="20" TextColor="Black" VerticalTextAlignment="Center" Margin="20,0"/>
+        <Label x:Name="lblUF" Text="UF" FontSize="20" TextColor="Black" VerticalTextAlignment="Center" Margin="20,0"/>
+
+    </StackLayout>
+    
 </ContentPage>
